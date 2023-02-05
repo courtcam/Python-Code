@@ -1,26 +1,34 @@
+#AWS Service Inventory Create a list of services using Python. IE: S3, Lambda, EC2, etc
+
+
 # intializing the array 
 aws_services = []
 
-#making an array of aws services 
-aws_services = ["S3", "lambda", "RDS","EC2","VPC", "dynamoDB"]
+#making an array of aws services by using the append method  
+aws_services.append("ECS")
+aws_services.append("VPC")
+aws_services.append("Lambda")
+aws_services.append("RDS")
+aws_services.append("EC2")
+aws_services.append("DynamoDB")
 
 #print current array
 print(aws_services)
 
 #print the length of the array
-print(len(aws_services))
-
-#add another service to the exiing list
-aws_services.append("ECS")
+print("the Length of my array is ",len(aws_services))
 
 #print the list to dipslay the update list
 print(aws_services)
 
 #print the length of the array
-print(len(aws_services))
+print("the Length of my array is ", len(aws_services))
 
 
-#Remove an item form the array 
-aws_services = aws_services.remove("RDS")
+#Removing two item form the array 
+aws_services.pop(4)
+aws_services.pop(0)
 
+#Print the new list and the new length of the list.
 print(aws_services)
+print("the Length of my NEW array is ", len(aws_services))
