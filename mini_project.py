@@ -25,7 +25,7 @@ print(aws_services)
 print("the Length of my array is ", len(aws_services))
 
 
-#Removing two item form the array 
+#Remove two specific services from the array by index.
 aws_services.pop(4)
 aws_services.pop(0)
 
